@@ -1,4 +1,4 @@
-# simple simplex method solver for max or min optimization.
+# simplex method solver for max or min optimization.
 
 
 all you have to do is download the file simplex.py (by cloning this repo) and make the file executable.
@@ -11,11 +11,11 @@ in linux this should be as simple as:
 $ chmod u+x simplex.py
 ```
 
-in windows, no frickin clue.
+in windows, no frickin clue how duz.
 
 ## run the program:
 
-i built in an argument parser to deal with inputs in a decent way. I'm sure there are better ways to interface with the terminal, and if you have any siggestions I'd love to hear them.
+i built in an argument parser to deal with inputs in a decent way. I'm sure there are better ways to interface with the terminal, and if you have any suggestions I'd love to hear them.
 
 run the help message to see what you're gettings yourself into:
 
