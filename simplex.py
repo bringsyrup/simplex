@@ -55,7 +55,7 @@ def optimizer(constraints, rows, start, find_min=False):
 				sparse_tableau[i][-1] = np.inf
 		min_ratio = sparse_tableau[:-1].min(axis=0)[-1]
 		pivot_row_index = np.where(sparse_tableau == min_ratio)[0][0]
-		print "\nexiting variable: row %d" % pivot_row_index
+		print "\nexiting variable: row %d, col %d" % (pivot_row_index, np.where(tableau[pivot_row_index][rows-1:-2] == 1)[0][0] + rows-1)
 		pivot_row_denom = tableau[pivot_row_index][pivot_col_index]
 		for index in range(len(tableau)):
 			if index != pivot_row_index:
