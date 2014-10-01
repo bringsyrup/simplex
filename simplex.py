@@ -67,8 +67,8 @@ def optimizer(constraints, rows, start, find_min=False):
 		new_opt = tableau[-1][-1]
 		counter += 1
 		if counter % 10 == 0:
-			boolean = raw_input("after ten iterations with no optimal found, would you like to continue? (y or n). ")
-			if boolean == "n":
+			boolean = raw_input("after ten iterations with no optimal found, would you like to continue? (y or n). ").lower
+			if boolean == "n" or boolean == "no":
 				break
 
 	return
