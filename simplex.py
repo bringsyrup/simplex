@@ -65,9 +65,9 @@ def optimizer(constraints, rows, start, find_min=False):
 		for i in range(len(tableau[pivot_row_index])):
 			tableau[pivot_row_index][i] = tableau[pivot_row_index][i]/pivot_row_denom
 		new_opt = tableau[-1][-1]
-		counter += 1
+		counter += 10
 		if counter % 10 == 0:
-			boolean = raw_input("after ten iterations with no optimal found, would you like to continue? (y or n). ").lower
+			boolean = raw_input("after ten iterations with no optimal found, would you like to continue? (y or n). ").lower()
 			if boolean == "n" or boolean == "no":
 				break
 
